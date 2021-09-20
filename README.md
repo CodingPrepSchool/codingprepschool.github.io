@@ -1,1 +1,1 @@
-# codingprepschool.github.io
+# school-web-page

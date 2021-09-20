@@ -3,15 +3,25 @@
     <head>  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet"  type='text/css'>
-        <link rel="stylesheet" href="/css/style.css">        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="/css/style.css">        <link rel="stylesheet" href="/css/style.css">        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Besley:wght@600&display=swap" rel="stylesheet"> 
         <title>Coding Prep School</title>
         <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script>
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script> -->
+        <script> 
             $(function(){
-                console.log(location.pathname)
+              $("#module_1_pricing_content").load("/pages/module-1_pricing.html"); 
+              $("#module_2_pricing_content").load("/pages/module-2_pricing.html"); 
+              $("#module_3_pricing_content").load("/pages/module-3_pricing.html"); 
+              $("#module_4_pricing_content").load("/pages/module-4_pricing.html"); 
+            });
+            $(document).ready(function () {
+                $("div.show_on_module_1").toggle(document.URL.indexOf("course=module_1") !== -1);
+                $("div.show_on_module_2").toggle(document.URL.indexOf("course=module_2") !== -1);
+                $("div.show_on_module_3").toggle(document.URL.indexOf("course=module_3") !== -1);
+                $("div.show_on_module_4").toggle(document.URL.indexOf("course=module_4") !== -1);
                 $(`.nav-link[href="${location.pathname}"]`).addClass("active");
             });
         </script> 
@@ -107,6 +117,7 @@
                         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
                         <img class="logo" src="/static/wolga-logo-green.png" alt="logo" width="125" />
                         <p class="fs-4 logo-caption">Coding <br />Prep School</p>
+
                     </a>
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
@@ -172,53 +183,46 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img height="500" class="d-block w-100 img-darken08" src="/static/kid_cheering_coding-crop.png" alt="First slide">
+                                <img height="500" class="d-block w-100 img-darken07" src="/static/kid_coding-crop.png" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img height="500" class="d-block w-100 img-darken07" src="/static/kid_sitting_coding.crop.png" alt="Second slide">
+                                <img height="500" class="d-block w-100 img-darken08" src="/static/kid_eating_coding-crop.png" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img height="500" class="d-block w-100 img-darken07" src="/static/kid-sitting-bed-coding-crop.png" alt="Third slide">
+                                <img height="500" class="d-block w-100 img-darken05" src="/static/kid_typing-crop.png" alt="Third slide">
                             </div>
-                            <h1 class="text-light display-1 centervh">Добро пожаловать в Coding Prep School</h1>
-                        </div>
+                            <h1 class="text-light display-1 centervh">Набор Открыт!</h1> 
+                        </div> 
                     </div>
 
                     <div class="card no-border" style="width: 100%;">
                         <div class="card-body card-body-style">
                             <!-- <h5 class="card-title">Card title</h5> -->
                             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <!-- <p class="card-text"> -->
 
-                            <p class="card-text">Программа нашей школы была разработана учителем Нью Йорка со степенью магистра
-                            (MS in Education, Long Island University, Brooklyn, NY) и программистом (automation engineer manager) 
-                            из Нью Йорка (PACE University) с 20-летним стажем*. Мы обучаем детей в США, Британии и Канаде, а теперь и в России. </p>
-                        
-                            <p class="card-text">Наши занятия проводятся на английском языке, поэтому знание разговорного английского необходимо. 
-                            Главный преподаватель свободно говорит на русском и английском языках, поэтому, в случае необходимости, 
-                            мы будем разъяснять сложный материал на русском языке. Наш программист подключается к занятиям в случае, 
-                            если компьютерная система студента дает сбои и требуется проверка программного обеспечения.</p>
-                
-                            <p class="card-text">Мы создали программу, которая позволяет освоить основы профессионального программирования. 
-                            Наши занятия хорошо структурированы, интересны подросткам, позволяют закрепить изученный материал на практике. 
-                            Наши студенты имеют возможность создать свое профессиональное портфолио.
-                            По окончании каждого модуля студенты получают сертификат, в котором указаны темы изученного материала и 
-                            выполненные ими проекты.</p>
-                            <br>
-                            <h3>Посмотреть пробное занятие можно здесь:</h3>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WB3URxiVCjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br>
-                
-                
-                            <h3>Занятия проводятся в онлайн формате. Количество студентов в группе = 6 – 10 человек.</h3>
-                            <br>
-                            <h3>Рекомендуемый возраст для начала занятий в нашей школе – 13 лет.</h3>
-                            <a href="/codingprepschool/diplomas">*Копии дипломов прикреплены здесь.</a>
-                            <br>
-                            <a href="/codingprepschool/courses">Полную информацию о программе школы можно получить здесь.</a>
-                            <br>
-                            <a href="/codingprepschool/contact-us">Cвязаться с нами и записаться на занятия</a>
-                            <br>
+                            <div class="show_on_module_1">
+                                <div id="module_1_pricing_content"></div>
+                            </div>
+                            <div class="show_on_module_2">
+                                <div id="module_2_pricing_content"></div>
+                            </div>
+                            <div class="show_on_module_3">
+                                <div id="module_3_pricing_content"></div>
+                            </div>
+                            <div class="show_on_module_4">
+                                <div id="module_4_pricing_content"></div>
+                            </div>
+
+                            <p>Записаться на занятия можно, отправив сообщение на номер в WhatsApp +1(347)561-2498 или электронную почту codingprepschool@gmail.com.</p>
+                            <p>В сообщении необходимо указать: </p>
+                            <ul>
+                                <li>фамилию и имя студента</li>
+                                <li>возраст студента</li>
+                                <li>предпочтительные дни и время для занятий</li>
+                                <li>какую операционную систему использует студент (Windows 7,8,9,10, MacOs, Linux)</li>
+                            </ul>
+                            <p> После отправки сообщения, на ваш номер или электронную почту придет уведомление-ответ от администраторов.</p>
+                            <h4>*Мы можем рассмотреть другое время проведения занятий. Для этого в заявке необходимо указать предпочтительное для вас время.</h4>
                         </div>
                     </div>
                 </div>
@@ -230,3 +234,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     </body>  
 </html>  
+
+
+
+
+
+
+

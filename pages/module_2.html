@@ -3,14 +3,14 @@
     <head>  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet"  type='text/css'>
-        <link rel="stylesheet" href="/css/style.css">        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="/css/style.css">        <link rel="stylesheet" href="/css/style.css">        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Besley:wght@600&display=swap" rel="stylesheet"> 
         <title>Coding Prep School</title>
         <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script>
-            $(function(){
+        <script> 
+            $(document).ready(function(){
                 console.log(location.pathname)
                 $(`.nav-link[href="${location.pathname}"]`).addClass("active");
             });
@@ -107,6 +107,7 @@
                         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
                         <img class="logo" src="/static/wolga-logo-green.png" alt="logo" width="125" />
                         <p class="fs-4 logo-caption">Coding <br />Prep School</p>
+
                     </a>
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
@@ -172,55 +173,85 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img height="500" class="d-block w-100 img-darken08" src="/static/kid_cheering_coding-crop.png" alt="First slide">
+                                <img height="250" class="d-block w-100 img-darken05" src="/static/module2_1-crop.png" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img height="500" class="d-block w-100 img-darken07" src="/static/kid_sitting_coding.crop.png" alt="Second slide">
+                                <img height="250" class="d-block w-100 img-darken05" src="/static/module2_2-crop.png" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img height="500" class="d-block w-100 img-darken07" src="/static/kid-sitting-bed-coding-crop.png" alt="Third slide">
+                                <img height="250" class="d-block w-100 img-darken05" src="/static/module2_3-crop.png" alt="Third slide">
                             </div>
-                            <h1 class="text-light display-1 centervh">Добро пожаловать в Coding Prep School</h1>
+                            <div class="centervh">
+                                <h2 class="text-light carousel-text-line1">Модуль II</h2>
+                                <h1 class="text-light display-1 carousel-text-line2">HTML and CSS</h1>
+                            </div>
                         </div>
                     </div>
 
                     <div class="card no-border" style="width: 100%;">
                         <div class="card-body card-body-style">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <!-- <p class="card-text"> -->
-
-                            <p class="card-text">Программа нашей школы была разработана учителем Нью Йорка со степенью магистра
-                            (MS in Education, Long Island University, Brooklyn, NY) и программистом (automation engineer manager) 
-                            из Нью Йорка (PACE University) с 20-летним стажем*. Мы обучаем детей в США, Британии и Канаде, а теперь и в России. </p>
-                        
-                            <p class="card-text">Наши занятия проводятся на английском языке, поэтому знание разговорного английского необходимо. 
-                            Главный преподаватель свободно говорит на русском и английском языках, поэтому, в случае необходимости, 
-                            мы будем разъяснять сложный материал на русском языке. Наш программист подключается к занятиям в случае, 
-                            если компьютерная система студента дает сбои и требуется проверка программного обеспечения.</p>
-                
-                            <p class="card-text">Мы создали программу, которая позволяет освоить основы профессионального программирования. 
-                            Наши занятия хорошо структурированы, интересны подросткам, позволяют закрепить изученный материал на практике. 
-                            Наши студенты имеют возможность создать свое профессиональное портфолио.
-                            По окончании каждого модуля студенты получают сертификат, в котором указаны темы изученного материала и 
-                            выполненные ими проекты.</p>
+                            
+                            <div class="row">
+                                <div class="col-8">
+                                    <p class="card-text">HTML (HyperText Markup Language) – язык, который позволяет 
+                                        структурировать веб-страницу. HTML дает браузеру понять, 
+                                        как отображать информацию на веб-странице.
+                                        CSS (Cascading Style Sheets) - язык, который используется для стилизации HTML-документа.
+                                        В модуль входит: презентация теоретического материала (слайды на каждом занятии), решение практических задач, 
+                                        которые подобраны с учетом интересов студентов, а также оценка знаний студентов (проектные работы).
+                                    </p>     
+                                </div>
+                                <div class="col-2">
+                                    <div class="text-center">
+                                        <i style="color: #d34a32;" class="fab fa-html5 fa-10x"></i><br>HTML5
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="text-center">
+                                        <i style="color: #2356a1" class="fab fa-css3-alt fa-10x"></i><br>CSS3                             
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <br>
-                            <h3>Посмотреть пробное занятие можно здесь:</h3>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WB3URxiVCjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h3>Продолжительность модуля - 12 занятий. </h3>
                             <br>
-                
-                
-                            <h3>Занятия проводятся в онлайн формате. Количество студентов в группе = 6 – 10 человек.</h3>
+                            <h3>Модуль включает в себя следующие темы:</h3>
+                            <ol>
+                                <li>HTML elements</li>
+                                <li>HTML table</li>
+                                <li>HTML forms</li>
+                                <li>CSS Selectors</li>
+                                <li>CSS Properties</li>
+                                <li>CSS Box</li>
+                            </ol>
                             <br>
-                            <h3>Рекомендуемый возраст для начала занятий в нашей школе – 13 лет.</h3>
-                            <a href="/codingprepschool/diplomas">*Копии дипломов прикреплены здесь.</a>
+                            <h3>Пропущенные занятия: </h3>
+                            <p class="card-text">допускается пропуск 20% занятий (3 занятия в данном модуле). В этом случае ученику высылается ссылка, 
+                            перейдя по которой можно просмотреть запись теоретического материала пропущенного урока. 
+                            Студент должен сообщить преподавателю о пропуске и попросить ссылку на материал.</p>
                             <br>
-                            <a href="/codingprepschool/courses">Полную информацию о программе школы можно получить здесь.</a>
+        
+                            <h2>Записаться на занятия</h2>
+                            <p class="card-text">Занятия проводятся два раза в неделю. Дни проведения занятий – с понедельника по пятницу. Время проведения занятий (московское):</p>
+                            <ul>
+                                <li>16:00 – 17:00 (пн-пт)</li>
+                                <li>17:00 – 18:00 (пн-пт)</li>
+                                <li>18:00 – 19:00 (пн-пт)</li>
+                                <li>19:00 – 20:00 (пн-пт)</li>
+                                <li>20:00 – 21:00 (пн-пт)</li>
+                            </ul>                      
+        
                             <br>
-                            <a href="/codingprepschool/contact-us">Cвязаться с нами и записаться на занятия</a>
-                            <br>
+                            <br>    
+                            <a href="/pages/signup.html?course=module_2"><button class="btn btn-primary">Цена модуля и условия оплаты</button></a>                
+                                
                         </div>
                     </div>
+
+
+
+        
                 </div>
                 <!-- main content end -->
             </div>
@@ -230,3 +261,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     </body>  
 </html>  
+
