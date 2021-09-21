@@ -50,9 +50,17 @@ body {
     background-color: #e7c581;
     padding: 3rem 5rem;
 }
+
+.card-text {
+    font-size: 1.2rem;
+}
 /* .navlink .active { */
     /* background-color: #3A32BF */
 /* } */
+
+.card-body > ol > li {
+    font-size: 1.1rem;
+}
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: #7ABF6B;

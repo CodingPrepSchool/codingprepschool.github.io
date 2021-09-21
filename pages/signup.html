@@ -16,12 +16,14 @@
               $("#module_2_pricing_content").load("/pages/module-2_pricing.html"); 
               $("#module_3_pricing_content").load("/pages/module-3_pricing.html"); 
               $("#module_4_pricing_content").load("/pages/module-4_pricing.html"); 
+              $("#module_5_pricing_content").load("/pages/module-5_pricing.html"); 
             });
             $(document).ready(function () {
                 $("div.show_on_module_1").toggle(document.URL.indexOf("course=module_1") !== -1);
                 $("div.show_on_module_2").toggle(document.URL.indexOf("course=module_2") !== -1);
                 $("div.show_on_module_3").toggle(document.URL.indexOf("course=module_3") !== -1);
                 $("div.show_on_module_4").toggle(document.URL.indexOf("course=module_4") !== -1);
+                $("div.show_on_module_5").toggle(document.URL.indexOf("course=module_5") !== -1);
                 $(`.nav-link[href="${location.pathname}"]`).addClass("active");
             });
         </script> 
@@ -31,7 +33,7 @@
             <div class="row g-0">
 
                 <!-- mobile sidemenu content start -->
-                <nav class="d-block d-xl-none navbar sidemenu">
+                <nav class="d-block d-xl-none navbar fixed-top sidemenu">
                     <div class="container-fluid">
                         <span>
                             &nbsp;
@@ -212,7 +214,19 @@
                             <div class="show_on_module_4">
                                 <div id="module_4_pricing_content"></div>
                             </div>
-
+                            <div class="show_on_module_5">
+                                <div id="module_5_pricing_content"></div>
+                            </div>
+                            <p class="card-text">Занятия проводятся два раза в неделю. Дни проведения занятий – с понедельника по пятницу. Время проведения занятий (московское):</p>
+                            <ul>
+                                <li>16:00 – 17:00 (пн-пт)</li>
+                                <li>17:00 – 18:00 (пн-пт)</li>
+                                <li>18:00 – 19:00 (пн-пт)</li>
+                                <li>19:00 – 20:00 (пн-пт)</li>
+                                <li>20:00 – 21:00 (пн-пт)</li>
+                            </ul>                      
+        
+                            <br>
                             <p>Записаться на занятия можно, отправив сообщение на номер в WhatsApp +1(347)561-2498 или электронную почту codingprepschool@gmail.com.</p>
                             <p>В сообщении необходимо указать: </p>
                             <ul>
