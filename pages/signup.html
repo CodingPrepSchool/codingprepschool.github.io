@@ -18,6 +18,7 @@
               $("#module_3_pricing_content").load("/pages/module-3_pricing.html"); 
               $("#module_4_pricing_content").load("/pages/module-4_pricing.html"); 
               $("#module_5_pricing_content").load("/pages/module-5_pricing.html"); 
+              $("#module_6_pricing_content").load("/pages/module-6_pricing.html"); 
             });
             $(document).ready(function () {
                 $("div.show_on_module_1").toggle(document.URL.indexOf("course=module_1") !== -1);
@@ -25,6 +26,7 @@
                 $("div.show_on_module_3").toggle(document.URL.indexOf("course=module_3") !== -1);
                 $("div.show_on_module_4").toggle(document.URL.indexOf("course=module_4") !== -1);
                 $("div.show_on_module_5").toggle(document.URL.indexOf("course=module_5") !== -1);
+                $("div.show_on_module_6").toggle(document.URL.indexOf("course=module_6") !== -1);
                 $(`.nav-link[href="${location.pathname}"]`).addClass("active");
             });
         </script> 
@@ -220,6 +222,9 @@
                             <div class="show_on_module_5">
                                 <div id="module_5_pricing_content"></div>
                             </div>
+                            <div class="show_on_module_6">
+                                <div id="module_6_pricing_content"></div>
+                            </div>
                             <p class="card-text">Занятия проводятся два раза в неделю. Дни проведения занятий – с понедельника по пятницу. Время проведения занятий (московское):</p>
                             <ul>
                                 <li>16:00 – 17:00 (пн-пт)</li>
@@ -236,7 +241,7 @@
                                 <li>фамилию и имя студента</li>
                                 <li>возраст студента</li>
                                 <li>предпочтительные дни и время для занятий</li>
-                                <li>какую операционную систему использует студент (Windows 7,8,9,10, MacOs, Linux)</li>
+                                <li>какую операционную систему использует студент (Windows 7,8,9,10, MacOS, Linux)</li>
                             </ul>
                             <p> После отправки сообщения, на ваш номер или электронную почту придет уведомление-ответ от администраторов.</p>
                             <h4>*Мы можем рассмотреть другое время проведения занятий. Для этого в заявке необходимо указать предпочтительное для вас время.</h4>
