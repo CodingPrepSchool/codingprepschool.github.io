@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">  
+<html lang="en">  
     <head>  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet"  type='text/css'>
@@ -33,6 +33,9 @@
                             <img src="/static/wolga-logo-green.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                             <span class="fs-5 link-dark logo-caption">Coding Prep School</span>
                         </span>
+                        <span class="text-end" style="padding-right: 10px;">
+                            <a style="font-size: 0.8rem" href="/en-US/index.html"><span class="icon-flag-us">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-gb">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-ca">&nbsp;&nbsp;&nbsp;&nbsp;</span> English</a><br><a style="font-size: 0.8rem" href="/ru/index.html"><span class="icon-flag-ru">&nbsp;&nbsp;&nbsp;&nbsp;</span> Русский</a>
+                        </span>
                     </div>
                 </nav>
 
@@ -46,54 +49,62 @@
 
                         <ul class="nav nav-pills flex-column mb-auto">
                             <li class="nav-item">
-                                <a href="/" class="nav-link link-dark" aria-current="page">
+                                <a href="/en-US/index.html" class="nav-link link-dark" aria-current="page">
                                     <i class="fas fa-home"></i>
-                                    Главная Страница
+                                    Home Page
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="nav-link link-dark">
                                     <i class="fas fa-list"></i>
-                                    Модули
+                                    Courses
                                 </a>
-                                <a href="/pages/module_1.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/module_1.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Модуль I. Основы Питона
+                                    Level I. Python
                                 </a>
-                                <a href="/pages/module_2.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/module_2.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Модуль II. HTML and CSS
+                                    Level II. HTML and CSS
                                 </a>
-                                <a href="/pages/module_3.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/module_3.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Модуль III. Основы FLASK <br />
+                                    Level III. Foundations of Flask<br />
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-fw"></i>
-                                    Создание Веб-Приложений
+                                    Creating Web Applications
                                 </a>
-                                <a href="/pages/module_4.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/module_4.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Модуль IV. Основы Git. Github
+                                    Level IV. Git. Github.
                                 </a>
-                                <a href="/pages/module_5.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/module_5.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Модуль V. SQL
+                                    Level V. SQL.
                                 </a>
-                                <a href="/pages/module_6.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/module_6.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Модуль VI. Создание профессионального портфолио
+                                    Level VI. Web Scraping. APIs.
+                                </a>
+                                <a href="/en-US/pages/module_7.html" class="nav-link link-dark">
+                                    <i class="fas fa-fw"></i>
+                                    <i class="fas fa-minus"></i>
+                                    Level VII. Developing a<br />
+                                    <i class="fas fa-fw"></i>
+                                    <i class="fas fa-fw"></i>
+                                    Professional Portfolio
                                 </a>
                             </li>
                             <li>
-                                <a href="/pages/signup.html" class="nav-link link-dark">
+                                <a href="/en-US/pages/signup.html" class="nav-link link-dark">
                                     <i class="fas fa-check"></i>
-                                    Записаться на Занятия
+                                    Register for Classes
                                 </a>
                             </li>
                         </ul>
@@ -103,10 +114,19 @@
                 <div style="margin-bottom:54px" class="d-xl-none">
                 </div>
                 <!-- mobile sidemenu content end -->
+
+                <!-- topmenu content start -->
+                <div class="d-none d-xl-block col sidemenu-solid text-end" style="line-height: 15px; padding: 8px 10px;">
+                    <a href="/en-US/index.html"><span class="icon-flag-us">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-gb">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-ca">&nbsp;&nbsp;&nbsp;&nbsp;</span> English</a> | <a href="/ru/index.html"><span class="icon-flag-ru">&nbsp;&nbsp;&nbsp;&nbsp;</span> Русский</a>
+                </div>
+                
+                <div style="margin: 0; padding: 0;" class="d-none d-xl-block">
+                </div>
+                <!-- topmenu content end -->
                 
                 <!-- sidemenu content start -->
                 <div class="d-none d-xl-block d-flex flex-column flex-shrink-0 p-3 sidemenu" style="width: 340px;">
-                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <a href="/en-US/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
                         <img class="logo" src="/static/wolga-logo-green.png" alt="logo" width="125" />
                         <p class="fs-4 logo-caption">Coding <br />Prep School</p>
@@ -115,54 +135,62 @@
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li class="nav-item">
-                            <a href="/" class="nav-link link-dark" aria-current="page">
+                            <a href="/en-US/index.html" class="nav-link link-dark" aria-current="page">
                                 <i class="fas fa-home"></i>
-                                Главная Страница
+                                Home Page
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark">
                                 <i class="fas fa-list"></i>
-                                Модули
+                                Courses
                             </a>
-                            <a href="/pages/module_1.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/module_1.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
-                                Модуль I. Основы Питона
+                                Level I. Python
                             </a>
-                            <a href="/pages/module_2.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/module_2.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
-                                Модуль II. HTML and CSS
+                                Level II. HTML and CSS
                             </a>
-                            <a href="/pages/module_3.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/module_3.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
-                                Модуль III. Основы FLASK <br />
+                                Level III. Foundations of Flask<br />
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-fw"></i>
-                                Создание Веб-Приложений
+                                Creating Web Applications
                             </a>
-                            <a href="/pages/module_4.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/module_4.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
-                                Модуль IV. Основы Git. Github
+                                Level IV. Git. Github.
                             </a>
-                            <a href="/pages/module_5.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/module_5.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
-                                Модуль V. SQL
+                                Level V. SQL
                             </a>
-                            <a href="/pages/module_6.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/module_6.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
-                                Модуль VI. Создание профессионального портфолио
+                                Level VI. Web Scraping. APIs.
+                            </a>
+                            <a href="/en-US/pages/module_7.html" class="nav-link link-dark">
+                                <i class="fas fa-fw"></i>
+                                <i class="fas fa-minus"></i>
+                                Level VII. Developing a<br />
+                                <i class="fas fa-fw"></i>
+                                <i class="fas fa-fw"></i>
+                                Professional Portfolio
                             </a>
                         </li>
                         <li>
-                            <a href="/pages/signup.html" class="nav-link link-dark">
+                            <a href="/en-US/pages/signup.html" class="nav-link link-dark">
                                 <i class="fas fa-check"></i>
-                                Записаться на Занятия
+                                Register for Classes
                             </a>
                         </li>
                     </ul>
@@ -176,17 +204,17 @@
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item carousel-item250 active">
-                                <img class="d-block w-100 img-darken05" src="/static/module1_1-crop.png" alt="First slide">
+                                <img class="d-block w-100 img-darken05" src="/static/module4_1-crop.png" alt="First slide">
                             </div>
                             <div class="carousel-item carousel-item250">
-                                <img class="d-block w-100 img-darken05" src="/static/module1_2-crop.png" alt="Second slide">
+                                <img class="d-block w-100 img-darken05" src="/static/module4_2-crop.png" alt="Second slide">
                             </div>
                             <div class="carousel-item carousel-item250">
-                                <img class="d-block w-100 img-darken05" src="/static/module1_3-crop.png" alt="Third slide">
+                                <img class="d-block w-100 img-darken05" src="/static/module4_3-crop.png" alt="Third slide">
                             </div>
                             <div class="centervh">
-                                <h2 class="text-light carousel-text-line1">Модуль I</h2>
-                                <h1 class="text-light display-1 carousel-text-line2">Основы Питона</h1>
+                                <h2 class="text-light carousel-text-line1">Level IV</h2>
+                                <h1 class="text-light display-1 carousel-text-line2">Git.GitHub.</h1>
                             </div>
                         </div>
                     </div>
@@ -202,48 +230,34 @@
                                         <img src="/static/python-logo-2.png" width="150px" />
                                     </div>
                                 </div>
-                                <div class="col-xl-9">
-                                    <p class="card-text">Студенты познакомятся с основными 
-                                        понятиями Питона – языка программирования. В модуль входит: 
-                                        презентация теоретического материала (слайды на каждом занятии), 
-                                        решение практических задач, которые подобраны с учетом интересов 
-                                        студентов, а также оценка знаний студентов (проверочные тесты).
-                                    </p>     
+                                <div class="col-xl-2">
+                                    <div style="padding-bottom:30px;" class="text-center">
+                                        <i style="color: #666666;" class="fab fa-github-square fa-6x"></i><br>Github
+                                    </div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <p class="card-text">
+                                        Git is a software used in the professional coding world. Git tracks changes that a developer makes to a project over time.
+                                         GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. 
+                                    </p>                                
                                 </div>
                             </div>
                             <br>
-                            <h4 style="margin-bottom: 15px">Модуль включает в себя следующие темы:</h4>
-                            <ol>
-                                <li>Commands, strings, variables</li>
-                                <li>Mathematical operations, comparators and Booleans</li>
-                                <li>Conditional statements</li>
-                                <li>Functions</li>
-                                <li>String Methods and String Concatenation</li>
-                                <li>Lists. List Methods</li>
-                                <li>List Slicing</li>
-                                <li>Dictionaries. Dictionary Methods</li>
-                                <li>List Comprehension</li>
-                                <li>Loops</li>
-                                <li>Modules</li>
-                                <li>Classes</li>
-                            </ol>
+                            <h4>The students will crate a Web App and store it in their GitHub repository using the main git commands: clone, init, 
+                            add, commit, push, log, diff, status, checkout, reset.</h4>
                             <br>
-                            <h5 style="margin-bottom: 15px">Продолжительность модуля - 30 занятий</h5>
-                            <h5>Пропущенные занятия: </h5>
-                            <p class="card-text">допускается пропуск 20% занятий (6 занятий в данном модуле). 
-                            В этом случае ученику высылается ссылка, перейдя по которой можно просмотреть 
-                            запись теоретического материала пропущенного урока. 
-                            Студент должен сообщить преподавателю о пропуске и попросить ссылку на материал.</p>
+                            <h5 style="margin-bottom: 15px">Course duration – 8 classes.</h5>
+                            <h5>We do not recommend skipping classes in this course.</h5>
                             <br>
+        
+
                             <br>
-                                
-                            <a href="/pages/signup.html?course=module_1"><button class="btn btn-primary">Цена модуля и условия оплаты</button></a>
-                            
-                            <!-- <a href="#" class="card-link">Card link</a> -->
-                            <!-- <a href="#" class="card-link">Another link</a> -->
+                            <a href="/en-US/pages/signup.html?course=module_4"><button class="btn btn-primary">Pricing Information and Payment Options</button></a>                               
                         </div>
                     </div>
+
                 </div>
+                
                 <!-- main content end -->
             </div>
         </div>
@@ -252,3 +266,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     </body>  
 </html>  
+
