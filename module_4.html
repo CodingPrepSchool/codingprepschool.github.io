@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>  
+<html lang="en">  
     <head>  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet"  type='text/css'>
@@ -10,28 +10,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script> -->
         <script> 
-            $(function(){
-              $("#module_1_pricing_content").load("/en-US/pages/module-1_pricing.html"); 
-              $("#module_2_pricing_content").load("/en-US/pages/module-2_pricing.html"); 
-              $("#module_3_pricing_content").load("/en-US/pages/module-3_pricing.html"); 
-              $("#module_4_pricing_content").load("/en-US/pages/module-4_pricing.html"); 
-              $("#module_5_pricing_content").load("/en-US/pages/module-5_pricing.html"); 
-              $("#module_6_pricing_content").load("/en-US/pages/module-6_pricing.html"); 
-              $("#module_7_pricing_content").load("/en-US/pages/module-7_pricing.html"); 
-            });
-            $(document).ready(function () {
-                $("div.show_on_module_1").toggle(document.URL.indexOf("course=module_1") !== -1);
-                $("div.show_on_module_2").toggle(document.URL.indexOf("course=module_2") !== -1);
-                $("div.show_on_module_3").toggle(document.URL.indexOf("course=module_3") !== -1);
-                $("div.show_on_module_4").toggle(document.URL.indexOf("course=module_4") !== -1);
-                $("div.show_on_module_5").toggle(document.URL.indexOf("course=module_5") !== -1);
-                $("div.show_on_module_6").toggle(document.URL.indexOf("course=module_6") !== -1);
-                $("div.show_on_module_7").toggle(document.URL.indexOf("course=module_7") !== -1);
+            $(document).ready(function(){
+                console.log(location.pathname)
                 $(`.nav-link[href="${location.pathname}"]`).addClass("active");
             });
-        </script> 
+        </script>
     </head>  
     <body>  
         <div class="container">
@@ -75,45 +59,45 @@
                                     <i class="fas fa-list"></i>
                                     Courses
                                 </a>
-                                <a href="/en-US/pages/module_1.html" class="nav-link link-dark">
+                                <a href="/module_1.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
                                     Course I. Python
                                 </a>
-                                <a href="/en-US/pages/module_2.html" class="nav-link link-dark">
+                                <a href="/module_2.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
                                     Course II. HTML and CSS
                                 </a>
-                                <a href="/en-US/pages/module_3.html" class="nav-link link-dark">
+                                <a href="/module_3.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Course III. FLASK <br />
+                                    Course III. Foundations of Flask<br />
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-fw"></i>
                                     Creating Web Applications
                                 </a>
-                                <a href="/en-US/pages/module_4.html" class="nav-link link-dark">
+                                <a href="/module_4.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                   Course IV. Git. Github.
+                                    Course IV. Git. Github.
                                 </a>
-                                <a href="/en-US/pages/module_5.html" class="nav-link link-dark">
+                                <a href="/module_5.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
-                                    Course V. SQL
+                                    Course V. SQL.
                                 </a>
-                                <a href="/en-US/pages/module_6.html" class="nav-link link-dark">
+                                <a href="/module_6.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
                                     Course VI. Web Scraping. APIs.
-                                 </a>
-                                 <a href="/en-US/pages/module_7.html" class="nav-link link-dark">
+                                </a>
+                                <a href="/module_7.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
                                     Course VII. Java Script.
                                 </a>
-                                <a href="/en-US/pages/module_8.html" class="nav-link link-dark">
+                                <a href="/module_8.html" class="nav-link link-dark">
                                     <i class="fas fa-fw"></i>
                                     <i class="fas fa-minus"></i>
                                     Course VIII. Developing a<br />
@@ -123,7 +107,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/en-US/pages/signup.html" class="nav-link link-dark">
+                                <a href="/signup.html" class="nav-link link-dark">
                                     <i class="fas fa-check"></i>
                                     Register for Classes
                                 </a>
@@ -135,18 +119,19 @@
                 <div style="margin-bottom:54px" class="d-xl-none">
                 </div>
                 <!-- mobile sidemenu content end -->
-                
+
                 <!-- topmenu content start -->
-                <div class="d-none d-xl-block col sidemenu-solid text-end" style="line-height: 15px; padding: 8px 10px;">
-                </div>
+                <!-- <div class="d-none d-xl-block col sidemenu-solid text-end" style="line-height: 15px; padding: 8px 10px;">
+                    <a href="/en-US/index.html"><span class="icon-flag-us">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-gb">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-ca">&nbsp;&nbsp;&nbsp;&nbsp;</span> English</a> | <a href="/ru/index.html"><span class="icon-flag-ru">&nbsp;&nbsp;&nbsp;&nbsp;</span> Русский</a>
+                </div> -->
                 
                 <div style="margin: 0; padding: 0;" class="d-none d-xl-block">
                 </div>
                 <!-- topmenu content end -->
-
+                
                 <!-- sidemenu content start -->
                 <div class="d-none d-xl-block d-flex flex-column flex-shrink-0 p-3 sidemenu" style="width: 340px;">
-                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <a href="/en-US/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
                         <img class="logo" src="/static/wolga-logo-green.png" alt="logo" width="125" />
                         <p class="fs-4 logo-caption">Coding <br />Prep School</p>
@@ -165,17 +150,17 @@
                                 <i class="fas fa-list"></i>
                                 Courses
                             </a>
-                            <a href="/en-US/pages/module_1.html" class="nav-link link-dark">
+                            <a href="/module_1.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course I. Python
                             </a>
-                            <a href="/en-US/pages/module_2.html" class="nav-link link-dark">
+                            <a href="/module_2.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course II. HTML and CSS
                             </a>
-                            <a href="/en-US/pages/module_3.html" class="nav-link link-dark">
+                            <a href="/module_3.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course III. Foundations of Flask<br />
@@ -183,27 +168,27 @@
                                 <i class="fas fa-fw"></i>
                                 Creating Web Applications
                             </a>
-                            <a href="/en-US/pages/module_4.html" class="nav-link link-dark">
+                            <a href="/module_4.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course IV. Git. Github.
                             </a>
-                            <a href="/en-US/pages/module_5.html" class="nav-link link-dark">
+                            <a href="/module_5.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course V. SQL
                             </a>
-                            <a href="/en-US/pages/module_6.html" class="nav-link link-dark">
+                            <a href="/module_6.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course VI. Web Scraping. APIs.
                             </a>
-                            <a href="/en-US/pages/module_7.html" class="nav-link link-dark">
+                            <a href="/module_7.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course VII. Java Script.
                             </a>
-                            <a href="/en-US/pages/module_8.html" class="nav-link link-dark">
+                            <a href="/module_8.html" class="nav-link link-dark">
                                 <i class="fas fa-fw"></i>
                                 <i class="fas fa-minus"></i>
                                 Course VIII. Developing a<br />
@@ -213,7 +198,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/en-US/pages/signup.html" class="nav-link link-dark">
+                            <a href="/signup.html" class="nav-link link-dark">
                                 <i class="fas fa-check"></i>
                                 Register for Classes
                             </a>
@@ -228,56 +213,61 @@
 
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100 img-darken07" src="/static/kid_coding-crop.png" alt="First slide">
+                            <div class="carousel-item carousel-item250 active">
+                                <img class="d-block w-100 img-darken05" src="/static/module4_1-crop.png" alt="First slide">
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-darken08" src="/static/kid_eating_coding-crop.png" alt="Second slide">
+                            <div class="carousel-item carousel-item250">
+                                <img class="d-block w-100 img-darken05" src="/static/module4_2-crop.png" alt="Second slide">
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-darken05" src="/static/kid_typing-crop.png" alt="Third slide">
+                            <div class="carousel-item carousel-item250">
+                                <img class="d-block w-100 img-darken05" src="/static/module4_3-crop.png" alt="Third slide">
                             </div>
-                            <h1 class="text-light display-1 centervh">Sign Up Today!</h1> 
-                        </div> 
+                            <div class="centervh">
+                                <h2 class="text-light carousel-text-line1">Course IV</h2>
+                                <h1 class="text-light display-1 carousel-text-line2">Git.GitHub.</h1>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="card no-border" style="width: 100%;">
                         <div class="card-body card-body-style">
                             <!-- <h5 class="card-title">Card title</h5> -->
                             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-
-                            <!-- <div class="show_on_module_1">
-                                <div id="module_1_pricing_content"></div>
-                            </div>
-                            <div class="show_on_module_2">
-                                <div id="module_2_pricing_content"></div>
-                            </div>
-                            <div class="show_on_module_3">
-                                <div id="module_3_pricing_content"></div>
-                            </div>
-                            <div class="show_on_module_4">
-                                <div id="module_4_pricing_content"></div>
-                            </div>
-                            <div class="show_on_module_5">
-                                <div id="module_5_pricing_content"></div>
-                            </div>
-                            <div class="show_on_module_6">
-                                <div id="module_6_pricing_content"></div>
-                            </div>
-                            <div class="show_on_module_7">
-                                <div id="module_7_pricing_content"></div>
-                            </div> -->
-                            <p class="card text-center">Secure your spot today! We will waive the $35 registration fee to the first 10 students!
-                            </p>   
-                            <br> 
-                            <p class="card text-center">Call Us or Text: (908)830-5127 </p>  
-                                <br>                   
-                            <p class="font-size 14">*Classes are held in Milltown, NJ 08850
-                            <br>
                             
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div class="text-center" style="padding-bottom: 30px">
+                                        <img src="/static/python-logo-2.png" width="150px" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-2">
+                                    <div style="padding-bottom:30px;" class="text-center">
+                                        <i style="color: #666666;" class="fab fa-github-square fa-6x"></i><br>Github
+                                    </div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <p class="card-text">
+                                        Git is a software used in the professional coding world. Git tracks changes that a developer makes to a project over time.
+                                         GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. 
+                                    </p>                                
+                                </div>
+                            </div>
+                            <br>
+                            <h4>The students will crate a Web App and store it in their GitHub repository using the main git commands: clone, init, 
+                            add, commit, push, log, diff, status, checkout, reset.</h4>
+                            <br>
+                            <!-- <h5 style="margin-bottom: 15px">Course duration – 8 classes.</h5>
+                            <h5>We do not recommend skipping classes in this course.</h5> -->
+                            <br>
+        
+
+                            <br>
+                            <!-- <a href="/en-US/pages/signup.html?course=module_4"><button class="btn btn-primary">Pricing Information and Payment Options</button></a>                                -->
                         </div>
                     </div>
+
                 </div>
+                
                 <!-- main content end -->
             </div>
         </div>
@@ -287,5 +277,3 @@
     </body>  
 </html>  
 
-<!-- <a href="/en-US/index.html"><span class="icon-flag-us">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-gb">&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="icon-flag-ca">&nbsp;&nbsp;&nbsp;&nbsp;</span> English</a> | <a href="/ru/index.html"><span class="icon-flag-ru">&nbsp;&nbsp;&nbsp;&nbsp;</span> Русский</a> -->
-<!-- lang="ru" -->
