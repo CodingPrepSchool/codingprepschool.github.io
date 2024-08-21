@@ -1,6 +1,6 @@
 body {
     /* background-color: #58A1D9 */
-    background-color: #6DD9DB
+    background-color: #A1D6E2
 }
 
 a:link { text-decoration: none; color: white;}
@@ -41,7 +41,7 @@ a:active { text-decoration: none; color: white;}
 
 .sidemenu {
     /* background-color: #F4F6EB; */
-    background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%);
+    background: -webkit-linear-gradient(-55deg, #1995AD 35%, #A1D6E2 100%);
 }
 
 .sidemenu-solid {
@@ -88,7 +88,7 @@ a:active { text-decoration: none; color: white;}
 }
 
 .card-body-style {
-    background-color: #e7c581;
+    background-color: #F1F1F2;
     padding: 3rem 5rem;
 }
 
@@ -104,7 +104,7 @@ a:active { text-decoration: none; color: white;}
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    background-color: #7ABF6B;
+    background-color: #67e24c;
 }
 
 .nav-pills, .nav-pills .show > .nav-link {
@@ -180,7 +180,7 @@ a:active { text-decoration: none; color: white;}
 .centervh {
     position: absolute;
     /* left: 50%; */
-    top: 40%;
+    top: 25%;
     /* transform: translate(-50%, -50%); */
     /* border: 5px solid #FFFF00; */
     padding: 10px;
